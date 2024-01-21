@@ -2,6 +2,17 @@ import streamlit as st
 import pickle
 import numpy as np 
 
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.ticker import AutoMinorLocator, MultipleLocator
+from sklearn.preprocessing import LabelEncoder
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import GridSearchCV
+
+
 def load_model():
   with open('saved_steps.pkl', 'rb') as file:
     data = pickle.load(file)
