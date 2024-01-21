@@ -2,11 +2,6 @@ import streamlit as st
 import pandas as pd 
 import matplotlib.pyplot as plt 
 
-from predict_page import show_predict_page
-from explore_page import show_explore_page
-import sklearn
-
-import numpy as np
 from matplotlib.ticker import AutoMinorLocator, MultipleLocator
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LinearRegression
